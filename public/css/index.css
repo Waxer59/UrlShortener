@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #2667ff;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body .main {
+  display: grid;
+  height: 100%;
+  place-content: center;
+}
+body .main .url-container {
+  background: #fffdfd;
+  border-radius: 20px;
+  box-shadow: 1px 0 3px 2px rgba(0, 0, 0, 0.3);
+  height: auto;
+  width: auto;
+}
+body .main .url-container .url-area {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+body .main .url-container .url-area .url {
+  border-radius: 5px;
+  border: 1px solid #000103;
+  display: block;
+  padding: 10px;
+  width: 300px;
+  transition: all 0.5s ease;
+  font-size: 12px;
+}
+body .main .url-container .url-area .green-border {
+  border: 1px solid #4BB543;
+}
+body .main .url-container .url-area .url:focus {
+  outline: none;
+}
+body .main .url-container .url-area .copy-area {
+  position: absolute;
+  margin-top: 8px;
+  margin-right: -270px;
+}
+body .main .url-container .url-area .copy-area .copy {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+body .main .url-container .form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0 25px;
+}
+body .main .url-container .form .create-url {
+  border-radius: 5px;
+  border: 1px solid #000103;
+  display: block;
+  padding: 10px;
+  width: 300px;
+  font-size: 12px;
+}
+body .main .url-container .form .create-url:focus {
+  outline: none;
+}
+body .main .url-container .form .create-url-submit {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #000103;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+body .main .url-container .form .create-url-submit:hover {
+  background: #000103;
+  color: #fffdfd;
+}
+
+/*# sourceMappingURL=index.css.map */

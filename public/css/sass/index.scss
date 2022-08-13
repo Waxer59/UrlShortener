@@ -1,0 +1,85 @@
+@import "generals";
+
+body {
+  .main {
+    display: grid;
+    height: 100%;
+    place-content: center;
+    .url-container {
+      background: $white;
+      border-radius: 20px;
+      box-shadow: 1px 0 3px 2px rgba($color: #000000, $alpha: 0.3);
+      height: auto;
+      width: auto;
+      .url-area {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        .url {
+          border-radius: 5px;
+          border: 1px solid $black;
+          display: block;
+          padding: 10px;
+          width: 300px;
+          transition: all 0.5s ease;
+          font-size: 12px;
+        }
+
+        .green-border{
+          border: 1px solid #4BB543;
+        }
+
+        .url:focus {
+          outline: none;
+        }
+
+        .copy-area {
+          position: absolute;
+          margin-top: 8px;
+          margin-right: -270px;
+          .copy {
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 0 25px;
+        .create-url {
+          border-radius: 5px;
+          border: 1px solid $black;
+          display: block;
+          padding: 10px;
+          width: 300px;
+          font-size: 12px;
+        }
+        .create-url:focus {
+          outline: none;
+        }
+        .create-url-submit {
+          background: none;
+          border-radius: 5px;
+          border: 1px solid $black;
+          cursor: pointer;
+          display: inline-block;
+          margin-top: 10px;
+          padding: 5px;
+          transition: all 0.3s ease;
+          margin-bottom: 20px;
+        }
+
+        .create-url-submit:hover {
+          background: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}

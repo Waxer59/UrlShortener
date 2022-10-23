@@ -1,10 +1,22 @@
-# Esta web es una aplicacion para acortar las url de las paginas web
+# UrlShortener
 
-# Recordar
+UrlShortener is a url's shortener, it makes the new urls look great.
 
-1. Instalar las depencencias del protecto con el comando 
+# Run the project in dev mode
+
+1. Install all the dependencies with the command: 
 ```
 npm i
 ```
 
-2. Completar el documento .env con todas las variables de entorno
+2. Fill the __.example.env__ file with your data and rename it to __.env__.
+
+3. Start the project with the command:
+```
+npm run dev
+```
+
+# Technologies used
+* Node
+* Express
+* MongoDB

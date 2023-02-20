@@ -8,10 +8,6 @@ const UrlSchema = Schema({
     code:{
         type: String,
         required: [true, 'The code is required']
-    },
-    password:{
-        type: Boolean,
-        default: false
     }
 });
 

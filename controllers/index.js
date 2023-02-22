@@ -7,7 +7,7 @@ const checkUrl = async (req, res) => {
     const urlDb = await Url.findOne({ code });
 
     if (!urlDb) {
-      res.redirect(process.env.ROOT)
+      res.redirect(process.env.BASE_URL)
       return;
     }
     const cryptr = new Cryptr(process.env.SECRETKEY);
@@ -15,7 +15,7 @@ const checkUrl = async (req, res) => {
     
     res.redirect(urlRedirect);
   } catch (error) {
-    res.redirect(process.env.ROOT)
+    res.redirect(process.env.BASE_URL)
   }
 };
 

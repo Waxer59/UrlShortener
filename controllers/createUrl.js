@@ -24,7 +24,7 @@ const createUrl = async (req, res) => {
 
     res.json({
       msg: "ok",
-      url: `${process.env.ROOT}/${code}`
+      url: `${process.env.BASE_URL}/${code}`
     });
   } catch (error) {
     console.log(error);

@@ -3,6 +3,7 @@
 const createUrlSubmit = document.querySelector("#create-url-submit");
 const createUrlInput = document.querySelector('#create-url');
 const url = document.querySelector('#url');
+const copyArea = document.querySelector("#copy-area")
 
 // Functions
 
@@ -33,6 +34,7 @@ createUrlSubmit.addEventListener("click", async (e) => {
   const {info, data} = await createUrl(createUrlInput.value);
   if (info.ok) {
     alert("Url created");
+    copyArea.style.visibility = "visible"
     url.value = data.url;
   } else {
     alert(data.msg);

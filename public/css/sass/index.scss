@@ -26,8 +26,8 @@ body {
           font-size: 12px;
         }
 
-        .green-border{
-          border: 1px solid #4BB543;
+        .green-border {
+          border: 1px solid #4bb543;
         }
 
         .url:focus {
@@ -35,6 +35,7 @@ body {
         }
 
         .copy-area {
+          visibility: hidden;
           position: absolute;
           margin-top: 8px;
           margin-right: -270px;

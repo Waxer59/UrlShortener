@@ -40,12 +40,13 @@ body .main .url-container .url-area .url {
   font-size: 12px;
 }
 body .main .url-container .url-area .green-border {
-  border: 1px solid #4BB543;
+  border: 1px solid #4bb543;
 }
 body .main .url-container .url-area .url:focus {
   outline: none;
 }
 body .main .url-container .url-area .copy-area {
+  visibility: hidden;
   position: absolute;
   margin-top: 8px;
   margin-right: -270px;
